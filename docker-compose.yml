@@ -1,0 +1,6 @@
+version: "2"
+services:
+  demo-app:
+    build: .
+    ports:
+      - 8800:80

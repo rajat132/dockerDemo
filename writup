@@ -1,0 +1,9 @@
+To create a sample demo angular project to run on docker I followed below steps:
+1)	Installed angular cli using following command: sudo npm install -g @angular/cli
+2)	Create working directory for the project.
+3)	Ran following command inside working directory to generate angular application: sudo npm install -g @angular/cli
+4)	Updated app.component.ts and app.component.html to display my desired title of the homepage.
+5)	Then I went inside the folder created by angular and created Dockerfile to docarize this app.
+6)	Since we have to use docker-compose to manage and build the project I used following command to install docker-compose: sudo apt install docker-compose
+7)	Then I created docker-compose.yml file to build docker image from source code and map port 80 of docker container to 8800 of my local machine.
+8)	Then I used following command to build and run the application: docker-compose up --build
